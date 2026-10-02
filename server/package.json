@@ -3,11 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
-
-"scripts": {
-  "dev": "nodemon server.js"
-}
-  ,
+  "scripts": {
+    "dev": "set NODE_OPTIONS=--use-system-ca&& nodemon server.js"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -17,8 +15,10 @@
     "cors": "^2.8.6",
     "dotenv": "^17.4.2",
     "express": "^5.2.1",
+    "google-auth-library": "^11.1.0",
+    "googleapis": "^181.0.0",
     "jsonwebtoken": "^9.0.3",
-    "mongoose": "^9.9.2"
+    "mongoose": "^9.10.3"
   },
   "devDependencies": {
     "nodemon": "^3.1.14"

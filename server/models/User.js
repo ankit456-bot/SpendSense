@@ -13,8 +13,23 @@ const userSchema = new mongoose.Schema({
   },
 
   password: {
+  type: String,
+  required: false
+},
+googleId: {
+  type: String,
+  default: null
+},
+
+  // Gmail OAuth
+  gmailRefreshToken: {
     type: String,
-    required: true
+    default: null
+  },
+
+  gmailConnected: {
+    type: Boolean,
+    default: false
   }
 });
 
